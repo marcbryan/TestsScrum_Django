@@ -1,0 +1,154 @@
+codi;titol_cicle;modul;buit;hores_modul;hlld;uf;hores_uf
+ICA0;Administració de Sistemes Informàtics i Xarxes;MP01 Implantació de sistemes operatius.;;198;33;UF1:  Instal·lació, configuració i explotació del sistema informàtic;60
+;;;;;;UF2:  Gestió de la informació i de recursos en una xarxa;80
+;;;;;;UF3:  Implantació de programari específic;25
+;;;;;;UF4:  Seguretat, rendiment i recursos;33
+;;MP02 Gestió de bases de dades;;132;33;UF1: Introducció a les bases de dades;33
+;;;;;;UF2: Llenguatges SQL: DML i DDL;66
+;;;;;;UF3: Assegurament de la informació;33
+;;MP03 Programació bàsica;;165;;UF1: Programació estructurada.;85
+;;;;;;UF2: Disseny modular;50
+;;;;;;UF3: Fonaments de gestió de fitxers;30
+;;MP04 Llenguatges de marques i sistemes de gestió d'informació.;;99;;UF1: Programació amb XML;45
+;;;;;;UF2: Àmbits d’aplicació de l’XML;27
+;;;;;;UF3: Sistemes de gestió d’informació empresarial;27
+;;MP05 Fonaments de maquinari.;;66;33;UF1: Arquitectura de sistemes;22
+;;;;;;UF2: Instal·lació, configuració i recuperació de programari;22
+;;;;;;UF3: Implantació i manteniment de CPD;22
+;;MP06 Administració de sistemes operatius.;;99;33;UF1: Administració avançada de sistemes operatius;70
+;;;;;;UF2: Automatització de tasques i llenguatges de guions;29
+;;MP07 Planificació i administració de xarxes.;;132;33;UF1: Introducció a les xarxes.;44
+;;;;;;UF2: Administració de dispositius de xarxa;44
+;;;;;;UF3: Administració avançada de xarxes.;44
+;;MP08 Serveis de xarxa i Internet.;;99;;UF1: Serveis de noms i configuració automàtica;25
+;;;;;;UF2: Serveis Web i de transferència de fitxers;25
+;;;;;;UF3: Correu electrònic i missatgeria;25
+;;;;;;UF4: Serveis d'àudio I vídeo;24
+;;MP09 Implantació d'aplicacions web.;;66;;UF1: Llenguatges de guions de servidor;33
+;;;;;;UF2: Implantació de gestors de continguts;33
+;;MP10 Administració de sistemes gestors de bases de dades.;;99;;UF1: Llenguatges SQL: DCL i extensió procedimental ;66
+;;;;;;UF2: Instal·lació i ajustament de SGBD corporatiu;33
+;;MP11 Seguretat i alta disponibilitat.;;99;;UF1: Seguretat física, lògica i legislació;24
+;;;;;;UF2: Seguretat activa i accés remot;24
+;;;;;;UF3: Tallafocs i servidors intermediaris;27
+;;;;;;UF4: Alta disponibilitat;24
+;;MP12 FOL;;99;;UF1: Incorporació al treball;66
+;;;;;;UF2: Prevenció de riscos laborals;33
+;;MP13 EIE;;66;;UF1: Empresa i iniciativa emprenedora;66
+;;MP14 Projecte ;;99;;UF1: Projecte;99
+ICB0;Desenvolupament d’aplicacions multiplataforma;MP01 Sistemes informàtics;;165;33;UF1:  Instal·lació, configuració i explotació del sistema informàtic;60
+;;;;;;UF2:  Gestió de la informació i de recursos en una xarxa;80
+;;;;;;UF3:  Implantació de programari específic;25
+;;MP02 Bases de dades;;198;33;UF1: Introducció a les bases de dades;33
+;;;;;;UF2: Llenguatges SQL: DML i DDL;66
+;;;;;;UF3: Llenguatge SQL: DCL i extensió procedimental;66
+;;;;;;UF4: Bases de dades objecte-relacionals;33
+;;MP03 Programació bàsica;;264;33;UF1: Programació estructurada.;85
+;;;;;;UF2: Disseny modular;50
+;;;;;;UF3: Fonaments de gestió de fitxers;30
+;;;;;;UF4: Programació orientada a objectes. Fonaments;35
+;;;;;;UF5: POO. Llibreries de classes fonamentals;35
+;;;;;;UF6: POO. Introducció a la persistència en BD;29
+;;MP04 Llenguatges de marques i sistemes de gestió d'informació.;;99;;UF1: Programació amb XML;45
+;;;;;;UF2: Àmbits d’aplicació de l’XML;27
+;;;;;;UF3: Sistemes de gestió d’informació empresarial;27
+;;MP05 Entorns de desenvolupament.;;66;;UF1: Desenvolupament de programari;20
+;;;;;;UF2: Optimització del programari;20
+;;;;;;UF3: Introducció al disseny orientat a objectes;26
+;;MP06 Accés a dades;;99;33;UF1: Persistència en fitxers;24
+;;;;;;UF2: Persistència en BDR-BDOR-BDOO;27
+;;;;;;UF3: Persistència en BD natives XML;24
+;;;;;;UF4: Components d’accés a dades;24
+;;MP07. Desenvolupament d’interfícies.;;99;;UF1: Disseny i implementació d’interfícies.;79
+;;;;;;UF2: Preparació i distribució d’aplicacions.;20
+;;MP08 Programació multimèdia i dispositius mòbils.;;99;;UF1: Desenvolupament d’aplicacions per dispositius mòbils;45
+;;;;;;UF2: Programació multimèdia;24
+;;;;;;UF3: Desenvolupament de jocs per dispositius mòbils;30
+;;MP09 Programació de serveis i processos.;;99;;UF1: Seguretat i criptografia ;25
+;;;;;;UF2: Processos i fils;37
+;;;;;;UF3: Sòcols i serveis;37
+;;MP10 Sistemes de gestió empresarial.;;66;33;UF1: Sistemes ERP-CRM. Implantació.;33
+;;;;;;UF2: Sistemes ERP-CRM. Explotació i adequació.;33
+;;MP11 FOL;;99;;UF1: Incorporació al treball;66
+;;;;;;UF2: Prevenció de riscos laborals;33
+;;MP12 EIE;;66;;UF1: Empresa i iniciativa emprenedora;66
+;;MP13 Projecte ;;99;;UF1: Projecte;99
+ICC0;Desenvolupament d’aplicacions web;MP01 Sistemes informàtics;;198-165;33;UF1:  Instal·lació, configuració i explotació del sistema informàtic;60
+;;;;;;UF2:  Gestió de la informació i de recursos en una xarxa;80
+;;;;;;UF3:  Implantació de programari específic;25
+;;MP02 Bases de dades;;231-198;33;UF1. Introducció a les bases de dades;33
+;;;;;;UF2. Llenguatges SQL: DML i DDL;66
+;;;;;;UF3. Llenguatges SQL: DCL i extensió procedimental;66
+;;;;;;UF4. Bases de dades objecte-relacionals;33
+;;MP03 Programació;;297-264;33;UF1. Programació estructurada;85
+;;;;;;UF2. Disseny modular;50
+;;;;;;UF3. Fonaments de gestió de fitxers;30
+;;;;;;UF4. Programació orientada a objectes. Fonaments;35
+;;;;;;UF5. POO. Llibreries de classes fonamentals;35
+;;;;;;UF6. POO. Introducció a la persistència en BD;29
+;;MP04 Llenguatge de marques i sistemes de gestió d’informació;;99;;UF1. Programació amb XML;45
+;;;;;;UF2. Àmbits d’aplicació de l’XML ;27
+;;;;;;UF3. Sistemes de gestió empresarial;27
+;;MP05 Entorns de desenvolupament;;66;;UF1. Desenvolupament de programari;20
+;;;;;;UF2. Optimització de programari:;20
+;;;;;;UF3. Introducció al disseny orientat a objectes;26
+;;MP06 Desenvolupament web en entorn client;;165-132;33;UF1. Sintaxi del llenguatge. Objectes predefinits del llenguatge;30
+;;;;;;UF2. Estructures definides pel programador. Objectes. ;30
+;;;;;;UF3. Esdeveniments. Manegament de formularis. Model d'objectes del document. ;42
+;;;;;;UF4. Comunicació asíncrona client-servidor.;30
+;;MP07 Desenvolupament web en entorn servidor;;165-132;33;UF1. Desenvolupament web en entorn servidor. ;30
+;;;;;;UF2. Generació dinàmica de pagines web. ;30
+;;;;;;UF3. Tècniques d’accés a dades. ;30
+;;;;;;UF4. Serveis web. Pàgines dinàmiques interactives. Webs Híbrids. ;42
+;;MP08 Desplegament d'aplicacions web;;99;;UF1. Servidors web i de transferència de fitxers. ;39
+;;;;;;UF2. Servidors d’aplicacions web. ;20
+;;;;;;UF3. Desplegament d’aplicacions web. ;20
+;;;;;;UF4. Control de versions i documentació. ;20
+;;M09 Disseny d'interfícies web;;99;;UF1. Disseny de la interfície. Estils. ;39
+;;;;;;UF2. Elements multimèdia: creació i integració. ;30
+;;;;;;UF3. Accessibilitat i usabilitat. ;30
+;;MP10 Formació i Orientació Laboral;;99;;UF1: Incorporació al treball. ;66
+;;;;;;UF2: Prevenció de riscos laborals.;33
+;;MP11 Empresa i iniciativa emprenedora;;66;;UF1: Empresa iniciativa emprenedora. ;66
+;;MP12 Projecte ;;99;;UF1: Projecte desenvolupament;99
+IC10;Sistemes Microinformàtics i Xarxes;MP01.  Muntatge i manteniment d’equips;;198 - 165;33;UF1 Electricitat a l’ordinador;25
+;;;;;;UF2 Components d’un equip microinformàtic;28
+;;;;;;UF3 Muntatge d’un equip microinformàtic;28
+;;;;;;UF4 Noves tendències de muntatge;28
+;;;;;;UF5 Manteniment d’equips microinformàtics;28
+;;;;;;UF6 Instal·lació de programari;28
+;;MP02. Sistemes Operatius Monolloc;;132-99;33;UF1 Introducció als sistemes operatius;33
+;;;;;;UF2 Sistemes operatius propietaris;33
+;;;;;;UF3 Sistemes operatius lliures.;33
+;;MP03. Aplicacions ofimàtiques;;165;0;UF1 Aplicacions ofimàtiques i atenció a l’usuari;20
+;;;;;;UF2 El correu i l’agenda electrònica ;20
+;;;;;;UF3 Processadors de text  ;30
+;;;;;;UF4 Fulls de càlcul  ;30
+;;;;;;UF5 Bases de dades  ;35
+;;;;;;UF6 Imatge i vídeo – Presentacions   ;30
+;;MP04. Sistemes operatius en xarxa;;132;0;UF1 Sistemes operatius propietaris en xarxa;36
+;;;;;;UF2 Sistemes operatius lliures en xarxa;36
+;;;;;;UF3 Compartició de recursos i seguretat;24
+;;;;;;UF4 Integració de sistemes operatius ;36
+;;MP05. Xarxes locals;;165;0;UF1 Introducció a les xarxes locals;66
+;;;;;;UF2 Configuració de commutadors  i encaminadors;66
+;;;;;;UF3 Resolució d’incidències en xarxes locals;33
+;;MP06.  Seguretat informàtica;;132;0;UF1 Seguretat passiva;24
+;;;;;;UF2 Còpies de seguretat;26
+;;;;;;UF3 Legislació de seguretat i protecció de dades;20
+;;;;;;UF4 Seguretat activa;24
+;;;;;;UF5 Tallafocs i monitoratge de xarxes;38
+;;MP07.  Serveis de xarxa;;165-132;33;UF1 Configuració de la xarxa (DNS i DHCP);36
+;;;;;;UF2 Correu electrònic i transmissió d’arxius;32
+;;;;;;UF3 Servidor web i servidor intermediari o proxy;32
+;;;;;;UF4 Accés a sistemes remots ;32
+;;MP08.  Aplicacions Web;;198-165;33;UF1 Ofimàtica i eines web;22
+;;;;;;UF2 Gestors d'arxius web;25
+;;;;;;UF3 Gestors de continguts;30
+;;;;;;UF4 Portals web d’aprenentatge;30
+;;;;;;UF5 Fonaments d’HTML i fulls d’estils;58
+;;MP09. FOL;;99;0;UF1. Incorporació al treball;66
+;;;;;;UF2. Prevenció de riscos laborals;33
+;;MP10. EiE;;66;0;UF1. Empresa i iniciativa emprenedora;66
+;;MP11. Anglès ;;99;0;UF1. Anglès;99
+;;MP12. Síntesi;;;;UF1. Síntesi;99

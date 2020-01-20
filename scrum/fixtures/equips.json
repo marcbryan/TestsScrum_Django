@@ -1,0 +1,49 @@
+[
+  {
+      "model": "contenttypes.contenttype",
+      "fields": {
+          "app_label": "scrum",
+          "model": "projecte"
+      }
+  },
+  {
+      "model": "contenttypes.contenttype",
+      "fields": {
+          "app_label": "scrum",
+          "model": "equip"
+      }
+  },
+  {
+      "model": "contenttypes.contenttype",
+      "fields": {
+          "app_label": "scrum",
+          "model": "spec"
+      }
+  },
+  {
+      "model": "contenttypes.contenttype",
+      "fields": {
+          "app_label": "scrum",
+          "model": "sprint"
+      }
+  },
+  {
+      "model": "contenttypes.contenttype",
+      "fields": {
+          "app_label": "scrum",
+          "model": "qualificacio"
+      }
+  },
+  {
+      "model": "contenttypes.contenttype",
+      "fields": {
+          "app_label": "scrum",
+          "model": "donespec"
+      }
+  },
+  {
+    "model": "scrum.equip",
+    "pk": 1,
+    "fields": {"nom": "Equip 1", "descripcio": "<p>Equip 1</p>", "projecte": 1, "membres": [2]}
+  }
+]

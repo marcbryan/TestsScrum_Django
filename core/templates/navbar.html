@@ -1,0 +1,119 @@
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="/perfil"><i class="material-icons left">settings</i>Perfil</a></li>
+    <li><a href="/logout"><i class="material-icons left">open_in_new</i>Surt</a></li>
+  </ul>
+
+  <ul id="dropdown2" class="dropdown-content">
+    <li><a href="{% url 'social:begin' 'google-oauth2' %}"><i class="material-icons left">mail</i>Login amb Google</a></li>
+    <li><a href="#"><i class="material-icons left">mail_outline</i>Login amb Outlook</a></li>
+  </ul>
+
+  <ul id="dropdown3" class="dropdown-content">
+    <li><a href="/borsa/convida_alumnes"><i class="material-icons left">email</i>Convida alumnes a la borsa</a></li>
+    <li><a href="/borsa/convida_alumnes"><i class="material-icons left">mail_outline</i>Convida alumnes a ABP/Scrum</a></li>
+    <li><a href="/borsa/convida_profes"><i class="material-icons left">email</i>Convida professors a ABP/Scrum</a></li>
+  </ul>
+
+<div class="navbar-fixed">
+
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">
+        <!--img src="/static/img/logo1.jpg" style="height:2.1em;"/-->
+      </a>
+      <ul class="right hide-on-med-and-down fixed">
+        {% if request.user.is_anonymous %}
+        <li>
+          <a class="dropdown-trigger" data-target="dropdown2" href="#">
+            <i class="material-icons left">person</i>
+            Entra
+            <i class="material-icons right">arrow_drop_down</i></a>
+          </a>
+        </li>
+        {% else %}
+
+            {% if request.user.is_staff and not request.user.es_admin_empresa %}
+            <li><a href="/admin/scrum"><i class="material-icons left">view_list</i>Scrum / ABP</a></li>
+            {% endif %}
+
+            <li><a href="/admin/borsApp"><i class="material-icons left">work</i>Borsa de Treball</a></li>
+
+            {% if request.user.es_admin_centre or request.user.is_superuser %}
+            <li>
+              <a class="dropdown-trigger" data-target="dropdown3" href="#">
+                Admin centre
+                <i class="material-icons right">arrow_drop_down</i></a>
+              </a>
+            </li>
+            {% endif %}
+
+            <li class="active">
+              <a class='dropdown-trigger' href="#" data-target="dropdown1">
+                <i class="material-icons left">person</i>
+                {{request.user.first_name}} {{request.user.last_name}}
+                <i class="material-icons right">arrow_drop_down</i></a>
+            </li>
+
+        {% endif %}
+
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        {% if request.user.is_anonymous %}
+        <li class="no-padding">
+            <ul class="collapsible collapsible-accordion">
+              <li>
+                <a class="collapsible-header">Entra<i class="material-icons">person</i></a>
+                <div class="collapsible-body">
+                  <ul>
+                    <li><a href="{% url 'social:begin' 'google-oauth2' %}"><i class="material-icons left">mail</i>Login amb Google</a></li>
+                    <li><a href="#"><i class="material-icons left">mail_outline</i>Login amb Outlook</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+        </li>
+        {% else %}
+        <li>
+          <div class="user-view">
+            <div class="background">
+              <!--img src="/static/img/sidenav2.svg"-->
+              <img style="width:100%;" src="/media/{{request.user.imatge}}">
+            </div>
+            <a href="#"><img class="circle" src="/static/img/user1.png"></a>
+            <a href="#"><span class="white-text name">{{request.user.first_name}} {{request.user.last_name}}</span></a>
+            <a href="#"><span class="white-text email">{{request.user.email}}</span></a>
+          </div>
+        </li>
+        <li><a href="/logout"><i class="material-icons">open_in_new</i>Surt</a></li>
+        <li><a href="/perfil"><i class="material-icons">settings</i>Perfil</a></li>
+        <li><a href="/admin/borsApp"><i class="material-icons">work</i>Borsa de Treball</a></li>
+          {% if request.user.is_staff %}
+          <li><a href="admin/scrum"><i class="material-icons">view_list</i>Scrum / ABP</a></li>
+          {% endif %}
+
+          {% if request.user.es_admin_centre %}
+        <li class="no-padding">
+            <ul class="collapsible collapsible-accordion">
+              <li>
+                <a class="collapsible-header">Administra centre<i class="material-icons">settings</i></a>
+                <div class="collapsible-body">
+                  <ul>
+                    <li><a href="/borsa/convida_alumnes"><i class="material-icons left">mail</i>Convida alumnes a ABP/Scrum</a></li>
+                    <li><a href="/borsa/convida_alumnes"><i class="material-icons left">mail_outline</i>Convida alumnes a la Borsa de Treball</a></li>
+                    <li><a href="/borsa/convida_profes"><i class="material-icons left">mail</i>Convida professors a ABP/Scrum</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+        </li>
+          {% endif %}
+
+        {% endif %}
+
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+</div>

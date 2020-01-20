@@ -1,0 +1,40 @@
+- model: borsApp.Cicle
+  pk: 2
+  fields:
+    nom: SMX Sistemes Microinformàtics i Xarxes
+    grau: CFGM
+    codi: IC10
+    descripcio: Cicle Formatiu de Grau Mitjà d'Informàtica
+    familia: 8
+- model: borsApp.Cicle
+  pk: 3
+  fields:
+    nom: DAW Desenvolupament d'Aplicacions Web
+    grau: CFGS
+    codi: ICC0
+    descripcio: Cicle Formatiu de Grau Superior d'Informàtica
+    familia: 8
+- model: borsApp.Cicle
+  pk: 4
+  fields:
+    nom: DAM Desenvolupament d'Aplicacions Multiplataforma
+    grau: CFGS
+    codi: ICB0
+    descripcio: Cicle Formatiu de Grau Superior d'Informàtica
+    familia: 8
+- model: borsApp.Cicle
+  pk: 5
+  fields:
+    nom: ASIX Administració de Sistemes Informàtics i Xarxes
+    grau: CFGS
+    codi: ICA0
+    descripcio: Cicle Formatiu de Grau Superior d'Informàtica
+    familia: 8
+- model: borsApp.Cicle
+  pk: 6
+  fields:
+    nom: ASIX Ciberseguretat
+    grau: CFGS
+    codi: ICA1
+    descripcio: Cicle Formatiu de Grau Superior d'Administració de Sistemes Informàtics i Xarxes, especialtizat en Ciberseguretat
+    familia: 8

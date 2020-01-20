@@ -1,0 +1,13 @@
+*.pyc
+__pycache__
+env/
+.env
+/static/*
+/talem.sql
+/talem.sql.gz
+/media/*
+db.sqlite3
+settings2.py
+.DS_Store
+geckodriver.log
+

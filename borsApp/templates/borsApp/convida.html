@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block extra_css %}
+.select-wrapper input.select-dropdown {
+	display: none;
+}
+
+select[id^='id_data_finalitzacio'] {
+	display: inline-block;
+	width: auto;
+}
+
+span.select2 {
+	width: 100% !important;
+}
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="container">
+    <div class="section">
+		<h2>Convida {{tipus}}</h2>
+
+
+{% if form %}
+
+	<form method="post">
+		{% csrf_token %}
+	    {{ form.as_p }}
+	    <input class="btn" type="submit" value="Submit">
+	</form>
+
+{% else %}
+	<h3>{{centre}}</h3>
+	<h4>{{cicle}}</h4>
+
+	{% if emails_ok %}
+	Emails convidats:
+	<ol>
+		{% for email in emails_ok %}
+		<li>{{email}}</li>	
+		{% endfor %}	
+	</ol>
+	{% endif %}
+
+	{% if emails_repetits %}
+	Emails repetits (se'ls demanarà acceptar de nou els termes d'ús dels nous permisos):
+	<ol>
+		{% for email in emails_repetits %}
+		<li>{{email}}</li>	
+		{% endfor %}	
+	</ol>
+	{% endif %}
+
+	{% if emails_erronis %}
+	Emails erronis:
+	<ol>
+		{% for email in emails_erronis %}
+		<li>{{email}}</li>	
+		{% endfor %}	
+	</ol>
+	{% endif %}
+
+{% endif %}
+
+
+	</div>
+</div>
+
+{% endblock %}
+
+

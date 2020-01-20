@@ -1,0 +1,1 @@
+[{"model": "scrum.sprint", "pk": 1, "fields": {"nom": "Sprint #1", "notes": "", "projecte": 1, "ordre": 1, "inici": "2019-06-26", "final": "2019-07-03"}}]

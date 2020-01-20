@@ -1,0 +1,54 @@
+- model: borsApp.Categoria
+  pk: 1
+  fields:
+    nom: Informàtica
+    descripcio: Relacionat amb la informàtica i comunicacions
+    pare: null
+- model: borsApp.Categoria
+  pk: 2
+  fields:
+    nom: Arts Gràfiques
+    descripcio: Relacionat amb arts gràfiques
+    pare: null
+- model: borsApp.Categoria
+  pk: 3
+  fields:
+    nom: Llenguatges de programació
+    descripcio: Llenguatges de programació
+    pare: 1
+- model: borsApp.Categoria
+  pk: 4
+  fields:
+    nom: C/C++
+    descripcio: Llenguatge compilat de baix nivell
+    pare: 3
+- model: borsApp.Categoria
+  pk: 5
+  fields:
+    nom: Python
+    descripcio: Llenguatge interpretat d'alt nivell i tipatge dinàmic orientat a la claredat del codi
+    pare: 3
+- model: borsApp.Categoria
+  pk: 6
+  fields:
+    nom: Java
+    descripcio: Llenguatge multiplataforma compilat, derivat de C++, i que s'executa en una màquina virtual JVM
+    pare: 3
+- model: borsApp.Categoria
+  pk: 7
+  fields:
+    nom: Famílies de Cicles Formatius
+    descripcio: Categories de famílies de cicles formatius (CCFF)
+    pare: null
+- model: borsApp.Categoria
+  pk: 8
+  fields:
+    nom: CCFF Informàtica i Comunicacions
+    descripcio: Família de CCFF d'informàtica i comunicacions
+    pare: null
+- model: borsApp.Categoria
+  pk: 9
+  fields:
+    nom: CCFF Arts Gràfiques
+    descripcio: Família de CCFF d'arts gràfiques
+    pare: null
