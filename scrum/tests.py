@@ -13,7 +13,7 @@ from scrum.models import *
 
 class ScrumTest(StaticLiveServerTestCase):
     serialized_rollback = True
-    fixtures = ['equips.json',]
+    fixtures = ['testdb.json', 'projectes.json', 'equips.json',]
     loged = False
     username = None
 
@@ -46,12 +46,21 @@ class ScrumTest(StaticLiveServerTestCase):
         self.username = usuari
 
     def test_6_crea_projecte(self):
-        self.backend_login("admin1","enric123")
+        self.backend_login("profe11","profe123")
         self.crea_equip("Team 1")
+
+    def crea_projecte(self, nom):
+        self.ves_al_menu_principal()
+        self.selenium.find_element_by_xpath('//a[@href="/admin/scrum/projecte/add/"]').click()
+        self.selenium.find_element_by_name('nom').send_keys(nom)
+        # accedir dins iframe direcció
+        self.selenium.switch_to_frame("id_descripcio_ifr")
+        self.selenium.find_element_by_xpath('//body').send_keys("Descripció projecte 1")
+        # tornar al main frame
+        self.selenium.switch_to_default_content()
 
     def crea_equip(self, nom):
         self.ves_al_menu_principal()
-        # afegim empresas
         self.selenium.find_element_by_xpath('//a[@href="/admin/scrum/equip/add/"]').click()
         self.selenium.find_element_by_name('nom').send_keys(nom)
         # accedir dins iframe direcció
@@ -59,6 +68,13 @@ class ScrumTest(StaticLiveServerTestCase):
         self.selenium.find_element_by_xpath('//body').send_keys("Descripció equip 1")
         # tornar al main frame
         self.selenium.switch_to_default_content()
+        #select2 projecte
+        self.selenium.find_element_by_xpath('//span[@id="select2-id_projecte-container"]').click()
+        self.selenium.find_element_by_xpath('//li[text()="Vota!"]').click()
+        # afegir membres
+        self.selenium.find_element_by_xpath('//option[text()="admin1"]').click()
+        self.selenium.find_element_by_id('id_membres_add_link').click()
+        # submit
         self.selenium.find_element_by_xpath('//input[@value="Desar"]').click()
         # check
         self.selenium.find_element_by_xpath('//li[@class="success"]')
